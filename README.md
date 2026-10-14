@@ -1,5 +1,7 @@
 # 流萤 Live2D 看板娘：网页部署与油猴脚本
 
+**Forked from** [**Iskongkongyo/Firefly-live2d**](https://github.com/Iskongkongyo/Firefly-live2d) **请关注支持原作者,感谢感谢！**
+
 一套可直接嵌入 **Openlist、博客、个人主页、静态站点与文档站**，也可通过 **Tampermonkey / Violentmonkey** 挂载到第三方网页的流萤 Live2D 看板娘。
 
 它使用 PixiJS 与 Cubism 4 在浏览器中加载模型，支持动作、表情、语音、消息框、配件切换、隐藏恢复和 JavaScript API。整个项目不依赖前端框架，只需保持目录结构并引入一个脚本即可使用。
