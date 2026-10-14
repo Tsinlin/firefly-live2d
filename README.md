@@ -1,6 +1,6 @@
 # 流萤 Live2D 看板娘：网页部署与油猴脚本
 
-一套可直接嵌入 **AList、博客、个人主页、静态站点与文档站**，也可通过 **Tampermonkey / Violentmonkey** 挂载到第三方网页的流萤 Live2D 看板娘。
+一套可直接嵌入 **Openlist、博客、个人主页、静态站点与文档站**，也可通过 **Tampermonkey / Violentmonkey** 挂载到第三方网页的流萤 Live2D 看板娘。
 
 它使用 PixiJS 与 Cubism 4 在浏览器中加载模型，支持动作、表情、语音、消息框、配件切换、隐藏恢复和 JavaScript API。整个项目不依赖前端框架，只需保持目录结构并引入一个脚本即可使用。
 
@@ -28,7 +28,7 @@
 
 ## 适用场景
 
-- **AList 文件站**：放入自定义头部或页脚，为文件页面增加互动角色。
+- **Openlist 文件站**：放入自定义头部或页脚，为文件页面增加互动角色。
 - **个人主页 / 博客**：作为固定在页面边缘的看板娘。
 - **项目展示页**：用消息和随机动作引导访客了解项目。
 - **文档站 / 导航页**：无需构建工具，静态部署即可使用。
@@ -144,7 +144,7 @@ http://127.0.0.1:8080/
 
 四个 `@require` 由油猴管理器在主脚本运行前加载，无法通过 JavaScript 自动回退；默认固定到 jsDelivr 的 `v6.5.0` 标签。更换资源源、版本或依赖来源时，请同步修改 `RESOURCE_SOURCES`、四行 `@require` 和对应的 `@connect`。完整说明见 `userscript/README.md`。
 
-## AList 接入
+## Openlist 接入
 
 将整个目录部署到可公开访问的静态地址，然后把以下内容加入 AList 的自定义头部或自定义页脚：
 
@@ -171,7 +171,7 @@ window.FireflyLive2DConfig = {
 <script src="https://live2d.example.com/firefly-loader.js" defer></script>
 ```
 
-若 AList 页面和模型资源不在同一域名，请确保静态资源服务器允许跨域请求，并且以下文件均可直接访问：
+若 Openlist 页面和模型资源不在同一域名，请确保静态资源服务器允许跨域请求，并且以下文件均可直接访问：
 
 - `firefly-loader.js`
 - `firefly.css`
