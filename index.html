@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="流萤 Live2D 看板娘：支持网页自行部署与油猴脚本两种方式，适用于 AList、博客、个人主页、文档站及日常浏览网页。">
+  <meta name="description" content="流萤 Live2D 看板娘：支持网页自行部署与油猴脚本两种方式，适用于 OpenList、博客、个人主页、文档站及日常浏览网页。">
   <meta name="theme-color" content="#d8f2f1">
   <title>流萤看板娘 · 网页部署与油猴脚本</title>
   <style>
@@ -763,7 +763,7 @@
         <p class="eyebrow">Web & Userscript · v6.6.2</p>
         <h1 id="hero-title"><span class="gradient-text">让流萤陪你，</span><br>停留在每一个页面。</h1>
         <p class="hero-lead">
-          既可部署到 AList、博客、个人主页与文档站，也可通过油猴脚本挂载到日常浏览的网站。无需框架，保留动作、表情、语音与配件交互，并支持页面标题、标签页、桌面悬停、移动端长按链接感知、触摸轻点随机互动，以及油猴版 jsDelivr 与自建源双源容灾。
+          既可部署到 OpenList、博客、个人主页与文档站，也可通过油猴脚本挂载到日常浏览的网站。无需框架，保留动作、表情、语音与配件交互，并支持页面标题、标签页、桌面悬停、移动端长按链接感知、触摸轻点随机互动，以及油猴版 jsDelivr 与自建源双源容灾。
         </p>
         <div class="actions">
           <a class="button primary" href="#quick-start">
@@ -782,7 +782,7 @@
           <span class="chip">纯前端接入</span>
           <span class="chip">动作与语音同步</span>
           <span class="chip">桌面/移动端适配</span>
-          <span class="chip">可用于 AList</span>
+          <span class="chip">可用于 OpenList</span>
           <span class="chip">双源容灾</span>
         </div>
       </div>
@@ -844,7 +844,7 @@
           <div class="grid scenario-grid">
             <article class="card scenario-card">
               <div class="card-icon" aria-hidden="true">☁</div>
-              <div><h3>AList 文件站</h3><p>在自定义头部或页脚中引入加载器，为资源页面增加陪伴感与互动入口。</p></div>
+              <div><h3>OpenList 文件站</h3><p>在自定义头部或页脚中引入加载器，为资源页面增加陪伴感与互动入口。</p></div>
             </article>
             <article class="card scenario-card">
               <div class="card-icon" aria-hidden="true">⌘</div>
@@ -876,7 +876,7 @@
           </div>
 
           <div class="install-pane" id="pane-web" role="tabpanel" aria-labelledby="tab-web" data-install-pane="web">
-            <p class="method-note">适合 AList、博客、个人主页、文档站和其他允许插入 JavaScript 的页面。</p>
+            <p class="method-note">适合 OpenList、博客、个人主页、文档站和其他允许插入 JavaScript 的页面。</p>
             <ol class="steps">
               <li><div><strong>上传整个目录。</strong> 保留 <code>load/</code>、<code>model/</code>、<code>assets/</code>、CSS 与 JS 的相对路径。</div></li>
               <li><div><strong>填写配置。</strong> 根据页面布局设置左右位置、桌面端和触摸端尺寸。</div></li>
@@ -910,7 +910,7 @@
   linkLongPressDelay: 650,  <span class="code-comment">// 纯触摸设备长按链接提示</span>
   idleMessageDelay: 90000,
   homeUrl: <span class="code-string">"/"</span>,
-  profileUrl: <span class="code-string">"https://baike.baidu.com/item/流萤/63849747"</span>,
+  profileUrl: <span class="code-string">"https://bbs.mihoyo.com/sr/wiki/content/2674/detail"</span>,
   minWidth: 1025,
   debug: false
 };
@@ -952,7 +952,7 @@ const RESOURCE_SOURCES = [
   },
   {
     name: <span class="code-string">"自建源"</span>,
-    base: <span class="code-string">"https://live2d.202132.xyz/"</span>,
+    base: <span class="code-string">"https://firefly.ourstar.top/“</span>,
     timeout: 15000,
     binaryTimeout: 25000
   }
@@ -1156,7 +1156,7 @@ window.FireflyLive2D.toggleCatEars();</code></pre>
       buttonHintDuration: 2600,
       controlsHideDelay: 180,
       homeUrl: "#top",
-      profileUrl: "https://baike.baidu.com/item/流萤/63849747",
+      profileUrl: "https://bbs.mihoyo.com/sr/wiki/content/2674/detail",
       profileHint: "我叫流萤，想要更多了解我吗？",
       minWidth: 1025,
       debug: false
